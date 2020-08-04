@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ra's To-do List</title>
+  <style>
+    /*  ----------   */
+    
+    div.a {
+      font-size: 55px;
+    }
+    .heighttext{
+  height:40px
+}
+input[type=submit] {
+  border: none; /*rewriting standard style, it is necessary to be able to change the size*/
+  height: 100px;
+  width: 200px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text]{
+    font-size: 25px;
+
+}
+input[type=email]{
+    font-size: 25px;
+
+}
+input[type=password]{
+    font-size: 25px;
+
+}
+    </style>
+</head>
+
+<body>
+  <h1><u><%= day %></u></h1>
+  <div class="a">
+  <form action="/" method="post">
+    <label for="name">First name : </label>
+    <input class="heighttext" type="text" name="name" placeholder="userName" size ="40px"></br>
+    <label for="email">Email-ID  :  </label>
+    <input class="heighttext" type="email" name="email" placeholder="enter your email" size ="40px"></br>
+    <label for="fpswd">Password  :  </label>
+    <input  class="heighttext" type="password" name="pswd" placeholder="enter your password" size ="40px"><br>
+    <div class ="image-upload-wrap">
+      <input class="file-upload-input" type="file" onchange="readURL(this);" name ="image" accept="image/*">
+      <div class="file-upload-contentt">
+        <img class ="file-upload-image" src="#" alt="your image" />
+        <div class="image-title-wrap">
+        </div>
+      </div>
+    </div>
+    <input type="submit" name="submit" value="submit"size="40px" c>
+  </form>
+  </div>
+</body>
+
+</html>
